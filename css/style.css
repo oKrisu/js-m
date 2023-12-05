@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+.section-title span {
+  text-transform: none;
+  font-weight: 400;
+  color: #777777;
+}
+
+/* Layout */
+.wrapper {
+  display: flex;
+  margin-left: 10px;
+}
+
+.sidebar {
+  flex: 1 0 0;
+}
+
+.posts {
+  flex: 2 0 0;
+}
+
+.sidebar, .posts {
+  background: #fff;
+  margin-right: 10px;
+  padding: 40px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+/* Logo */
+.logo {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-size: 104px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Lists */
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list .active {
+  font-weight: bold;
+}
+
+.list-horizontal li {
+  display: inline-block;
+}
+
+/* Authors */
+.authors li {
+  margin-bottom: 12px;
+}
+
+/* Post */
+.post {
+  display: none;
+}
+.post.active {
+  display: block;
+}
+
+.post-author {
+  font-style: italic;
+}
+
+.post-tags {
+  display: flex;
+}
+.post-tags p {
+  margin: 0 10px 0 0;
+}
+
+/* Tags Cloud */
+.sidebar .tags li {
+  display: inline;
+}
+.sidebar .tags a.tag-size-1 {
+  font-size: 70%;
+}
+.sidebar .tags a.tag-size-2 {
+  font-size: 90%;
+}
+.sidebar .tags a.tag-size-3 {
+  font-size: 110%;
+}
+.sidebar .tags a.tag-size-4 {
+  font-size: 120%;
+}
+.sidebar .tags a.tag-size-5 {
+  font-size: 140%;
+}
+.sidebar .tags a.tag-size-6 {
+  font-size: 160%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBUSxxSEFBQTtBQUVSLGNBQUE7QUFTQSxXQUFBO0FBRUE7RUFDRSxzQkFBQTtBQ1RGOztBRFlBO0VBQ0UsZ0JBZFk7RUFlWiwwQ0FWVTtFQVdWLFdBZlc7RUFnQlgsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7QUNURjs7QURZQTtFQUNFLHFCQUFBO0VBQ0EsWUFBQTtBQ1RGO0FEV0U7RUFDRSxZQUFBO0FDVEo7O0FEYUE7RUFDRSxpQkFBQTtFQUNBLGNBQUE7QUNWRjs7QURhQTtFQUNFLGVBQUE7RUFDQSx5QkFBQTtFQUNBLGlDQW5DWTtFQW9DWixnQkFBQTtBQ1ZGO0FEV0U7RUFDRSxvQkFBQTtFQUNBLGdCQUFBO0VBQ0EsY0FBQTtBQ1RKOztBRGFBLFdBQUE7QUFFQTtFQUNFLGFBQUE7RUFDQSxpQkFBQTtBQ1hGOztBRGNBO0VBQ0UsV0FBQTtBQ1hGOztBRGNBO0VBQ0UsV0FBQTtBQ1hGOztBRGNBO0VBQ0UsZ0JBaEVZO0VBaUVaLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7QUNYRjs7QURjQSxTQUFBO0FBRUE7RUFDRSxrQ0F2RVU7RUF3RVYsZ0JBQUE7RUFDQSxnQkFBQTtFQUNBLGNBQUE7RUFDQSxrQkFBQTtBQ1pGOztBRGVBLFVBQUE7QUFFQTtFQUNFLHFCQUFBO0VBQ0EsU0FBQTtFQUNBLFVBQUE7QUNiRjtBRGNFO0VBQ0UsaUJBQUE7QUNaSjs7QURpQkU7RUFDRSxxQkFBQTtBQ2RKOztBRGtCQSxZQUFBO0FBR0U7RUFDRSxtQkFBQTtBQ2pCSjs7QURxQkEsU0FBQTtBQUVBO0VBQ0UsYUFBQTtBQ25CRjtBRG9CRTtFQUNFLGNBQUE7QUNsQko7O0FEc0JBO0VBQ0Usa0JBQUE7QUNuQkY7O0FEc0JBO0VBQ0UsYUFBQTtBQ25CRjtBRG9CRTtFQUNFLGtCQUFBO0FDbEJKOztBRHVCQSxlQUFBO0FBR0U7RUFDRSxlQUFBO0FDdEJKO0FEeUJFO0VBQ0UsY0FBQTtBQ3ZCSjtBRDBCRTtFQUNFLGNBQUE7QUN4Qko7QUQyQkU7RUFDRSxlQUFBO0FDekJKO0FENEJFO0VBQ0UsZUFBQTtBQzFCSjtBRDZCRTtFQUNFLGVBQUE7QUMzQko7QUQ4QkU7RUFDRSxlQUFBO0FDNUJKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
